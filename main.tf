@@ -1,3 +1,9 @@
+provider "aws" {
+  version = "2.33.0"
+
+  region = var.aws_region
+}
+
 resource "aws_s3_bucket" "b" {
   bucket = "my-tf-test-bucket"
   acl    = "private"
